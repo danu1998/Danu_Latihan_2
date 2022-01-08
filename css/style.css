@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #ff923d;
+  --header-color: #4e4e4e;
+  --text-color: #777777;
+  --light-text-color: #aaaaaa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+/* Nav Menu */
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.text_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav_link {
+  font-size: 16px;
+  color: var(--header-color);
+  font-weight: 500;
+}
+
+.nav_link:hover {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.right_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav_icon_cart {
+  width: 24px;
+  height: 24px;
+}
+
+.icon_bag {
+  width: 100%;
+}
+
+/* Image Profile */
+.nav_profile {
+  width: 50px;
+  height: 50px;
+}
+
+.img_profile {
+  width: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nav_respon_btn {
+  display: none;
+}
+
+/* End Image Profile */
+
+/* End Of Nav */
+
+/* Display */
+
+.main_section {
+  margin-top: 90px;
+}
+
+.display_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_img_section {
+  flex: 50%;
+}
+
+.img_display_header {
+  border-radius: 40px;
+  width: 440px;
+  height: 440px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.img_display_col {
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  margin-top: 20px;
+}
+
+.img_display_sm {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img_display_sm:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  border: 3px solid var(--primary-color);
+  opacity: 0.5;
+}
+
+.img_display,
+.img_sm {
+  width: 100%;
+}
+
+.display_header {
+  flex: 50%;
+}
+
+.text_header {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.product_name {
+  /* margin-top: -10px; */
+  font-size: 36px;
+  color: var(--header-color);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.display_desc {
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.price_col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.price_text {
+  font-size: 24px;
+  color: var(--header-color);
+  font-weight: 700;
+}
+
+.disc_price {
+  padding: 5px 20px;
+  background-color: #ff923d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.price_before_disc {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: var(--light-text-color);
+  font-weight: 500;
+}
+
+.btn_calc_col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.btn_calc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn_icon_calc {
+  padding: 5px 15px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+  box-shadow: 0 5px 10px var(--primary-color);
+  cursor: pointer;
+}
+
+.input_calc {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+.btn_submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 5px 10px var(--primary-color);
+  cursor: pointer;
+}
+
+.icon_img_shop {
+  width: 18px;
+  height: 18px;
+}
+
+.icon_shop {
+  width: 100%;
+}

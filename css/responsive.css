@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #ff923d;
+  --header-color: #4e4e4e;
+  --text-color: #777777;
+  --light-text-color: #aaaaaa;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+  .container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .text_title {
+    font-size: 24px;
+  }
+
+  .right_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav_icon_cart {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav_item {
+    display: none;
+  }
+
+  .nav_profile {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav_respon_btn {
+    display: block;
+  }
+
+  .btn_respon {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .main_section {
+    margin-top: 30px;
+  }
+  .display_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img_display_header {
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .img_display_col {
+    display: grid;
+    grid-template-columns: repeat(4, 0.3fr);
+    margin-top: 20px;
+  }
+
+  .img_display_sm {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .text_header {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .product_name {
+    font-size: 24px;
+  }
+
+  .display_desc {
+    font-size: 12px;
+    line-height: 20px;
+    width: 300px;
+  }
+
+  .price_col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .price_text {
+    font-size: 18px;
+  }
+
+  .disc_price {
+    padding: 5px 10px;
+    background-color: #ff923d;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .price_before_disc {
+    font-size: 14px;
+  }
+
+  .btn_calc_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .btn_icon_calc {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  .input_calc {
+    padding: 5px;
+    width: 150px;
+  }
+
+  .btn_calc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
